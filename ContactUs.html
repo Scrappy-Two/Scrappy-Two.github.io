@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .navbar-custom {
-                background-color: #9d48ff;
-                color: #feffed;
-            }
-            li {
-                color: #feffed;
-            }
-        </style>
+  <head>
+    <style>
+      .navbar-custom {
+        background-color: #9d48ff;
+        color: #feffed;
+      }
+		li {
+        color: #feffed;
+      }
+	  button.sendBtn {
+		color: #fff;
+		background-color: #9d48ff;
+		border-color: #9d48ff;
+	  }
+    </style>
 
 
       <link rel="icon" type="image/x-icon" href="./items/scrapp_logo.png">
@@ -25,7 +30,7 @@
       <nav class="navbar navbar-expand-md navbar-fixed-top navbar-custom">
           <span class="navbar-brand ">
 
-      <a class="nav-link" style="color: #feffed;" href="./About_Scrapp.html">
+      <a class="nav-link" style="color: #feffed;" href="./index.html">
         <img src="./items/scrapp_logo.png" width="50px" height="50px">
         Scrapp
       </a>
@@ -38,13 +43,44 @@
                     <li class="nav-item"><a class="nav-link" style="color: #feffed;" href="./Meet_The_Team.html">Meet The Team</a></li>
                     <li class="nav-item"><a class="nav-link" style="color: #feffed;" href="./ContactUs.html">Contact Us</a></li>
                 </ul>
-            </div>
-        </nav>
-        <div class="jumbotron text-center">
-            <h1>Scrapp</h1>
-		<img src="./items/scrapp_logo.png" width="10%">
-            <p>Our very own Augmented-Reality Scrapbooking platform!</p>
-        </div>
+    </nav>
+    <div class="jumbotron text-center" style="padding-bottom:25px;padding-top:100px;color:#9d48ff;">
+      <h1>Contact Us</h1>
+      <div class="container" style="padding-bottom:25px">
+        <form id="contact" name="contact" method="post">
+          <div class="col-sm-8 offset-sm-2 row">
+            <div class="col">
+              <label>First Name</label>
+              <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
 
-    </body>
+            </div>
+            <div class="col">
+              <label>Last Name</label>
+              <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+            </div>
+          </div>
+      </div>
+      <div class="container" style="padding-bottom:25px">
+        <div class="col-sm-8 offset-sm-2 row">
+          <div class="col">
+            <label for="email">Email address</label>
+            <input type="email" required maxlength="50" class="form-control" id="email" name="email" placeholder="name@example.com">
+          </div>
+        </div>
+      </div>
+      <div class="container" style="padding-bottom:25px">
+        <div class="col-sm-8 offset-2">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn sendBtn px-4 btn-lg" style="#9d48ff;">Post</button>
+      </form>
+    </div>
+	
+	
+	<div class="text-center" style="padding-top:50px;color:#9d48ff;">
+	<h4> Alternatively email us at: <a href = "mailto: projectscrapp@gmail.com">projectscrapp@gmail.com</a></h4> 
+	</div>
+  </body>
 </html>
